@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="324.0" prefWidth="256.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wlxk.fx.calculator.PrimaryController">
+    <children>
+        <Pane layoutX="7.0" layoutY="108.0" prefHeight="214.0" prefWidth="242.0">
+            <VBox>
+                <HBox>
+                    <Button fx:id="ceButton" onAction="#buttonOnClick" prefHeight="42.0" prefWidth="60.0" text="CE">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Button>
+                    <Button fx:id="cButton" onAction="#buttonOnClick" prefHeight="42.0" prefWidth="60.0" text="C">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Button>
+                    <Button fx:id="cancelButton" onAction="#buttonOnClick" prefHeight="42.0" prefWidth="60.0" text="☒">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Button>
+                    <Button fx:id="divideButton" onAction="#buttonOnClick" prefHeight="42.0" prefWidth="60.0" text="÷">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Button>
+                </HBox>
+                <HBox>
+                    <Button fx:id="sevenButton" onAction="#buttonOnClick" prefHeight="42.0" prefWidth="60.0" text="7">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Button>
+                    <Button fx:id="eightButton" onAction="#buttonOnClick" prefHeight="42.0" prefWidth="60.0" text="8">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Button>
+                    <Button fx:id="nineButton" onAction="#buttonOnClick" prefHeight="42.0" prefWidth="60.0" text="9">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Button>
+                    <Button fx:id="multiplyButton" onAction="#buttonOnClick" prefHeight="42.0" prefWidth="60.0" text="×">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Button>
+                </HBox>
+                <HBox>
+                    <Button fx:id="fourButton" onAction="#buttonOnClick" prefHeight="42.0" prefWidth="60.0" text="4">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Button>
+                    <Button fx:id="fiveButton" onAction="#buttonOnClick" prefHeight="42.0" prefWidth="60.0" text="5">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Button>
+                    <Button fx:id="sixButton" onAction="#buttonOnClick" prefHeight="42.0" prefWidth="60.0" text="6">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Button>
+                    <Button fx:id="subtractButton" onAction="#buttonOnClick" prefHeight="42.0" prefWidth="60.0" text="-">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Button>
+                </HBox>
+                <HBox>
+                    <Button fx:id="oneButton" onAction="#buttonOnClick" prefHeight="42.0" prefWidth="60.0" text="1">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Button>
+                    <Button fx:id="twoButton" onAction="#buttonOnClick" prefHeight="42.0" prefWidth="60.0" text="2">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Button>
+                    <Button fx:id="threeButton" onAction="#buttonOnClick" prefHeight="42.0" prefWidth="60.0" text="3">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Button>
+                    <Button fx:id="addButton" onAction="#buttonOnClick" prefHeight="42.0" prefWidth="60.0" text="+">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Button>
+                </HBox>
+                <HBox>
+                    <Button fx:id="signButton" onAction="#buttonOnClick" prefHeight="42.0" prefWidth="60.0" text="±">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Button>
+                    <Button fx:id="zeroButton" onAction="#buttonOnClick" prefHeight="42.0" prefWidth="60.0" text="0">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Button>
+                    <Button fx:id="dotButton" onAction="#buttonOnClick" prefHeight="42.0" prefWidth="60.0" text=".">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Button>
+                    <Button fx:id="equalButton" onAction="#buttonOnClick" prefHeight="42.0" prefWidth="60.0" text="=">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Button>
+                </HBox>
+                <opaqueInsets>
+                    <Insets />
+                </opaqueInsets>
+            </VBox>
+        </Pane>
+        <Label fx:id="showText" alignment="CENTER_RIGHT" layoutX="15.0" layoutY="65.0" prefHeight="30.0" prefWidth="226.0" text="123">
+            <font>
+                <Font size="24.0" />
+            </font>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <padding>
+                <Insets left="10.0" right="10.0" />
+            </padding>
+        </Label>
+        <Label fx:id="formulaText" alignment="CENTER_RIGHT" layoutX="15.0" layoutY="46.0" prefHeight="17.0" prefWidth="226.0" text="1+" textFill="#00000099">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <padding>
+                <Insets left="15.0" right="15.0" />
+            </padding>
+         <font>
+            <Font size="14.0" />
+         </font>
+        </Label>
+
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+</Pane>
