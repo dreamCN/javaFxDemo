@@ -40,7 +40,7 @@
                 <version>0.0.3</version>
                 <configuration>
                     <release>${maven.compiler.release}</release>
-                    <jlinkImageName>javaFxDemo</jlinkImageName>
+                    <jlinkImageName>calculator</jlinkImageName>
                     <launcher>launcher</launcher>
                     <mainClass>calculator/com.wlxk.fx.calculator.App</mainClass>
                 </configuration>
