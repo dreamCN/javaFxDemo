@@ -1,0 +1,55 @@
+.label_0 {
+    /*-fx-background-color: rgb(255, 255, 255);*/
+}
+
+.label_1 {
+    -fx-background-color: #7a7a7a;
+}
+.label_2 {
+    -fx-background-color: #11BAF4;
+}
+
+.label_3 {
+    /*-fx-background-color: #cc5200;*/
+    /*-fx-border-color: #000000;*/
+    -fx-background-image: url(../image/box-normal.gif) no-repeat;
+    -fx-background-size: 100% 100%;
+}
+
+.label_4 {
+    /*-fx-background-color: rgb(255, 0, 251);*/
+    -fx-background-image: url(../image/grass.gif) no-repeat;
+    -fx-background-size: 100% 100%;
+}
+
+.label_5 {
+    /*-fx-background-color: #cc0f00;*/
+    -fx-background-image: url(../image/boy-down.gif) no-repeat;
+    -fx-background-size: 100% 100%;
+}
+
+.label_6 {
+    /*-fx-background-color: #990f00;*/
+    -fx-background-image: url(../image/boy-left.gif) no-repeat;
+    -fx-background-size: 100% 100%;
+}
+
+.label_7 {
+    /*-fx-background-color: #710b00;*/
+    -fx-background-image: url(../image/boy-right.gif) no-repeat;
+    -fx-background-size: 100% 100%;
+}
+
+.label_8 {
+    /*-fx-background-color: #550800;*/
+    -fx-background-image: url(../image/boy-up.gif) no-repeat;
+    -fx-background-size: 100% 100%;
+
+}
+
+.label_9 {
+    /*-fx-background-color: #6700f9;*/
+    /*-fx-border-color: #000000;*/
+    -fx-background-image: url(../image/box-win.gif) no-repeat;
+    -fx-background-size: 100% 100%;
+}
