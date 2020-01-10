@@ -3,11 +3,17 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane onKeyPressed="#keyPressed" prefHeight="578.0" prefWidth="611.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wlxk.fx.sokoban.gui.MainController">
-   <children>
-      <GridPane fx:id="gridPane" layoutX="10.0" layoutY="10.0" onKeyPressed="#keyPressed">
-      </GridPane>
-      <Button layoutX="192.0" layoutY="534.0" mnemonicParsing="false" onAction="#testClick" onKeyPressed="#keyPressed" text="开始" />
-      <Button layoutX="248.0" layoutY="534.0" mnemonicParsing="false" onAction="#resetClick" onKeyPressed="#keyPressed" text="复位" />
-   </children>
+<AnchorPane onKeyPressed="#keyPressed" prefHeight="578.0" prefWidth="611.0"
+            xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.wlxk.fx.sokoban.gui.MainController">
+    <children>
+        <GridPane fx:id="gridPane" layoutX="10.0" layoutY="10.0" onKeyPressed="#keyPressed">
+        </GridPane>
+        <Button layoutX="192.0" layoutY="534.0" mnemonicParsing="false" onAction="#startClick"
+                onKeyPressed="#keyPressed" text="开始"/>
+        <Button layoutX="248.0" layoutY="534.0" mnemonicParsing="false" onAction="#resetClick"
+                onKeyPressed="#keyPressed" text="复位"/>
+        <Button layoutX="248.0" layoutY="534.0" mnemonicParsing="false" onAction="#backClick"
+                onKeyPressed="#keyPressed" text="回退一步"/>
+    </children>
 </AnchorPane>
