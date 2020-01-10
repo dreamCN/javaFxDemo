@@ -23,7 +23,7 @@ public class MainController {
     @FXML
     private GridPane gridPane;
 
-    int level;
+    int level = 1;
     /**
      * temp_map为临时此位置     map为原地图上此位置
      */
@@ -51,7 +51,6 @@ public class MainController {
 
     @FXML
     private void resetClick(Event event) {
-        step = new Stack<Integer>();
         init(level);
     }
 
@@ -65,17 +64,11 @@ public class MainController {
     }
 
     private void init(int level) {
+        step = new Stack<Integer>();
         this.level = level;
-        switch (level) {
-            case 1:
-                copydata(GameMap.LEAVE_1);
-                break;
-            default:
-                copydata(GameMap.LEAVE_1);
-                break;
-        }
+        copydata(GameMap.getByLevel(level));
         step.clear(); //初始化
-        labelMap = new HashMap<>();
+        labelMap = new HashMap<>(400);
         repaint();
     }
 
@@ -107,28 +100,8 @@ public class MainController {
         }
         repaint();
         if (isWin()) {
-
+            init(level + 1);
         }
-        /*if(isWin()) {
-            if(level==MAXLEVEL)
-            {
-                JOptionPane.showMessageDialog(null, "！！！祝贺您通过最后一关！！！");
-                return;
-            }
-            else
-            {
-                int choice=0;
-                choice=JOptionPane.showConfirmDialog(null,"恭喜您通过第"+level+"关!\n是否要进入下一关？","过关",JOptionPane.YES_NO_OPTION);
-                if(choice==0)
-                {
-                    Sel("Next"); //进入下一关
-                }
-                if(choice==1);
-                {
-                    return;
-                }
-            }
-        }*/
     }
 
     private void repaint() {
